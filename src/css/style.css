@@ -18,9 +18,11 @@ th, td{
     padding: 0; /* Remove default padding */
 }
 th .input{
+    width: 95%;
     text-align: center;
 }
 th button {
+    background-image: linear-gradient(rgb(155, 155, 155), rgb(80, 80, 80));
     height: 100%;
     width: 100%;
     border: none;
