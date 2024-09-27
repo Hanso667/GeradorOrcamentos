@@ -17,17 +17,22 @@ function add() {
             table = document.getElementById("table")
             rows = table.rows.length
             row = table.insertRow(rows-1)
-            codec = row.insertCell(0)
-            codec.innerHTML = codigo
-            itemc = row.insertCell(1)
-            itemc.innerHTML = item
-            valorc = row.insertCell(2)
-            valorc.innerHTML = valor
-            quantidadec = row.insertCell(3)
-            quantidadec.innerHTML = quantidade
-            valorTotalUnc = row.insertCell(4)
-            valorTotalUnc.innerHTML = valorTotalUn
-            
+
+                codec = row.insertCell(0)
+                codec.innerHTML = codigo
+
+                itemc = row.insertCell(1)
+                itemc.innerHTML = item
+
+                valorc = row.insertCell(2)
+                valorc.innerHTML = valor
+
+                quantidadec = row.insertCell(3)
+                quantidadec.innerHTML = quantidade
+                
+                valorTotalUnc = row.insertCell(4)
+                valorTotalUnc.innerHTML = valorTotalUn
+                
         document.getElementById("codigo").value = ""
         document.getElementById("item").value = ""
         document.getElementById("valor").value = ""

@@ -1,19 +1,18 @@
 <!doctype html>
 <html lang="pt-br">
 
-    <head>
-        <link rel="stylesheet" href="src/css/reset.css">
-        <link rel="stylesheet" href="src/css/style.css">
-        <link rel="shortcut icon" href="src/img/shortcuticon.png">
-        <title>Gerador de orçamentos</title>
-        <script src="src/script/add.js"></script>
-        <script src="src/script/desconto.js"></script>
-    </head>
+<head>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="shortcut icon" href="src/img/shortcuticon.png">
+    <title>Gerador de orçamentos</title>
+    <script src="src/script/add.js"></script>
+    <script src="src/script/desconto.js"></script>
+</head>
 
-    <body>
-        <div class="content">
+<body>
+    <div class="content">
         <table id="table">
-            <thead>
                 <tr>
                     <th>Identidade<input type="text">
                     <th>Telefone<input type="number">
@@ -21,33 +20,32 @@
                     <th><button onclick="window.print()">Print</button>
                     <th><button onclick="add()" id="botao" class="button">+</button></th>
                 </tr>
-            <tr>
-                <th><input type="text" class="input" readonly disabled placeholder="(Codigo do item)"></th>
-                <th><input type="text" class="input" readonly disabled placeholder="(Nome do Item)"></th>
-                <th><input type="number" class="input" readonly disabled placeholder="(Valor do Item)"></th>
-                <th><input type="number" class="input" readonly disabled placeholder="(Quantidade do Item)"></th>
-                <th><input type="number" class="input" readonly disabled placeholder="(ValorTotal)"></th>
+                <tr>
+                    <th><input type="text" class="input" readonly disabled placeholder="(Codigo do item)"></th>
+                    <th><input type="text" class="input" readonly disabled placeholder="(Nome do Item)"></th>
+                    <th><input type="number" class="input" readonly disabled placeholder="(Valor do Item)"></th>
+                    <th><input type="number" class="input" readonly disabled placeholder="(Quantidade do Item)"></th>
+                    <th><input type="number" class="input" readonly disabled placeholder="(ValorTotal)"></th>
                 </tr>
-            <tr>
-                <th><input type="text" class="input" id="codigo" ></th>
-                <th><input type="text" class="input" id="item" ></th>
-                <th><input type="number" class="input" id="valor" ></th>
-                <th><input type="number" class="input" id="quantidade" ></th>
-                <th><input type="number" class="input" readonly ></th>
-            </tr>
-            <tr>
-                <th><input type="radio" name="desconto" id="Porcentagem" checked>
-                    <label for="Porcentagem">Desconto(%)</label>
-                    <input type="radio" name="desconto" id="Reais">
-                    <label for="Reais">Desconto(R$)</label>
-                <th>Desconto<input type="text" id="Desconto" class="input">
-                <th>Valor<input type="text" id="ValDesconto" disabled class="input">
-                <th>Total <input type="number"  id="valorTotal" readonly ></th>
-                <th><button onclick="desconto()" id="botao" class="button">[Calcular]</button></th>
-            </tr>
-            </thead>
+                <tr>
+                    <th><input type="text" class="input" id="codigo"></th>
+                    <th><input type="text" class="input" id="item"></th>
+                    <th><input type="number" class="input" id="valor"></th>
+                    <th><input type="number" class="input" id="quantidade"></th>
+                    <th><input type="number" class="input" readonly></th>
+                </tr>
+                <tr>
+                    <th><input type="radio" name="desconto" id="Porcentagem" checked>
+                        <label for="Porcentagem">Desconto(%)</label>
+                        <input type="radio" name="desconto" id="Reais">
+                        <label for="Reais">Desconto(R$)</label>
+                    <th>Desconto<input type="text" id="Desconto" class="input">
+                    <th>Valor<input type="text" id="ValDesconto" disabled class="input">
+                    <th>Total<input type="number" id="valorTotal" readonly class="input"></th>
+                    <th><button onclick="desconto()" id="botao" class="button">[Calcular]</button></th>
+                </tr>
         </table>
-        </div>
-    </body>
+    </div>
+</body>
 
 </html>
