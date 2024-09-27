@@ -18,16 +18,18 @@
                     <th>Identidade<input type="text">
                     <th>Telefone<input type="number">
                     <th>Endereço<input type="text">
-                    <th><button onclick="add()" id="botao" class="button">+</button></th>
                     <th><button onclick="window.print()">Print</button>
+                    <th><button onclick="add()" id="botao" class="button">+</button></th>
                 </tr>
             <tr>
+                <th><input type="text" class="input" readonly disabled placeholder="(Codigo do item)"></th>
                 <th><input type="text" class="input" readonly disabled placeholder="(Nome do Item)"></th>
                 <th><input type="number" class="input" readonly disabled placeholder="(Valor do Item)"></th>
                 <th><input type="number" class="input" readonly disabled placeholder="(Quantidade do Item)"></th>
                 <th><input type="number" class="input" readonly disabled placeholder="(ValorTotal)"></th>
                 </tr>
             <tr>
+                <th><input type="text" class="input" id="codigo" ></th>
                 <th><input type="text" class="input" id="item" ></th>
                 <th><input type="number" class="input" id="valor" ></th>
                 <th><input type="number" class="input" id="quantidade" ></th>
@@ -38,7 +40,8 @@
                     <label for="Porcentagem">Desconto(%)</label>
                     <input type="radio" name="desconto" id="Reais">
                     <label for="Reais">Desconto(R$)</label>
-                <th><input type="text" id="Desconto" class="input">
+                <th>Desconto<input type="text" id="Desconto" class="input">
+                <th>Valor<input type="text" id="ValDesconto" disabled class="input">
                 <th>Total <input type="number"  id="valorTotal" readonly ></th>
                 <th><button onclick="desconto()" id="botao" class="button">[Calcular]</button></th>
             </tr>
